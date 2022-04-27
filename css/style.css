@@ -681,12 +681,18 @@ color: var(--white-color);
     border-color:rgba(33, 33, 33, 0.2);
     transition: border-color var(--transition-duration) var(--timing-function);
 }
-.modal-input input:hover{
+.modal-input input:hover,
+.modal-input input:focus
+
+{
     border-color: var(--blue-color);
     transition: border-color var(--transition-duration) var(--timing-function);
 }
 .modal-input:hover 
-.modal-icon{
+.modal-icon,
+.modal-input:focus
+.modal-icon
+{
     transition: fill var(--transition-duration) var(--timing-function);
     fill: var(--blue-color);
 }
@@ -704,7 +710,9 @@ color: var(--white-color);
     color: rgba(117, 117, 117, 0.5);
 
 }
-.modal-input textarea:hover{
+.modal-input textarea:hover,
+.modal-input textarea:focus
+{
     border-color: var(--blue-color);
     transition: border-color var(--transition-duration) var(--timing-function);
 }
@@ -761,7 +769,9 @@ margin-bottom: 30px;
    
     
 }
-.subscribeinput:hover{
+.subscribeinput:hover,
+.subscribeinput:focus
+{
     border-color: var(--blue-color);
     transition: border-color var(--transition-duration) var(--timing-function);
 }
