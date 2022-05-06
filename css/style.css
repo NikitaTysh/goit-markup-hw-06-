@@ -805,6 +805,9 @@ margin-bottom: 30px;
     display: flex;
     
 }
+.subscribe-icon{ 
+    margin: auto;
+}
 .subscribebtn
 {
     display: flex;
@@ -814,4 +817,7 @@ margin-bottom: 30px;
 .subscribebtn span 
 {
     margin-right: 10px;
+}
+.subbutton{
+    display: flex;
 }
