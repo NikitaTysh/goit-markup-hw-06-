@@ -636,7 +636,20 @@ color: var(--white-color);
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;}
+    cursor: pointer; 
+	transition: border-color var(--transition-duration) var(--timing-function);
+}
+.btn-close-modal:hover ,
+.btn-close-modal:focus
+{
+    border-color: var(--blue-color);
+}
+.btn-close-modal:hover .modal-x,
+.btn-close-modal:focus .modal-x
+{
+fill: var(--blue-color);
+}
+
 .modal-title{
     font-weight: 700;
     font-size: 20px;
@@ -678,6 +691,9 @@ color: var(--white-color);
     left: 14px;
     transform: translateY(-50%);
     fill: var(--secondary-text);
+    transition: fill var(--transition-duration) var(--timing-function);
+}
+.modal-x{
     transition: fill var(--transition-duration) var(--timing-function);
 }
 
@@ -751,7 +767,7 @@ margin-bottom: 30px;
     display: inline-block;
     width: 16px;
     height: 15px;
-    background-image:url(/images/unchecked.svg);
+    background-image:url(../images/unchecked.svg);
     background-size: contain;
     margin-right: 8px;
  }
@@ -764,7 +780,7 @@ margin-bottom: 30px;
      appearance: none;
  }
 .checkbox:checked + .checksvg{
-    background-image:url(/images/checked.svg);
+    background-image:url(../images/checked.svg);
 }
 .modalbutton
 {   
